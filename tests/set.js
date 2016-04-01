@@ -1,6 +1,15 @@
-console.log(new Date().toString()); // Default system timezone
+function testDate(type) {
+    var header = "[" + type + "] ";
+    var goodDate = new Date();
+    var badDate = new Date(NaN);
+    console.log(header + "Date: " + (goodDate + ''));
+    console.log(header + "Invalid Date: " + (badDate + ''));
+}
+
+testDate('default');
 
 // Set timezone
 require('../src/set-timezone')('America/New_York')
 
-console.log(new Date().toString()); // Replaced timezone (New York/ET)
+testDate('replaced');
+
