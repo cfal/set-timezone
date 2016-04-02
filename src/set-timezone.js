@@ -1,4 +1,4 @@
-var time = require('time');
+var time = require('set-timezone-time');
 
 module.exports = function(timezone) {
     time.tzset(timezone);

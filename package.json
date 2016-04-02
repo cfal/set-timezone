@@ -13,7 +13,7 @@
     "url": "https://github.com/cfal/set-timezone"
   },
   "dependencies": {
-    "time": "*"
+    "set-timezone-time": "*"
   },
   "devDependencies": {
     "chai": "*",
