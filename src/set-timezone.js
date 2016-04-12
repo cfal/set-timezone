@@ -1,8 +1,8 @@
 var time = require('set-timezone-time');
 
 var origDate = Date;
+var origOffset = new Date().getTimezoneOffset();
 module.exports = function(timezone) {
-    var origOffset = new Date().getTimezoneOffset();
     time.tzset(timezone);
     var newOffset = (new time.Date().getTimezoneOffset() - origOffset) * 60 * 1000;
     Date = time.Date;

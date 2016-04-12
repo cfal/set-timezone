@@ -1,6 +1,6 @@
 {
   "name": "set-timezone",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Set the timezone for the default Date object",
   "author": "Alex Lau",
   "license": "MIT",
